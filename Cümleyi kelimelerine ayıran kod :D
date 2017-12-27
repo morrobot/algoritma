@@ -15,9 +15,10 @@ public class test {
 }
 
     public static void showWords(String cumle) {
-        int space = cumle.indexOf(" ");
-        cumle = cumle.substring(0,space) + "\n" + cumle.substring(space+1);
+        int space = cumle.indexOf("");
+        cumle = cumle.substring(0,space) + "\n" + cumle.replaceAll("\\s+", "\n");
         System.out.println(cumle);
+        //System.out.println(cumle.replaceAll("\\s+", "\n"));
     }
 
 }
