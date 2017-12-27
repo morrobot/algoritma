@@ -1,0 +1,26 @@
+package MorRobot;
+import java.util.HashMap;
+import java.util.Scanner;
+public class sldbnfads {
+
+    public static void main(String[] args) {
+   String Mor;
+  int value;
+      Scanner Robot = new Scanner(System.in);
+      HashMap<Character,Integer> map = new HashMap<Character,Integer>();
+      System.out.println("cümleyi giriniz lütfen:");
+   Mor = Robot.nextLine();
+   for (int i=0; i<Mor.length(); i++){
+            if(map.containsKey(Mor.charAt(i))){
+       value = map.get(Mor.charAt(i));
+       value ++;
+              map.put(Mor.charAt(i),value);
+            }else{
+    map.put(Mor.charAt(i),1);
+            }
+        }
+        for ( Character key : map.keySet()){
+            System.out.println("Karakter : '"+key+"' sayı :"+map.get(key));
+        }
+    }
+}
