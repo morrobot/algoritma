@@ -9,15 +9,15 @@ public class test {
         in = new Scanner(System.in);
 
         System.out.println("Cümleyi girin:");
-        String sentence = in.nextLine();
+        String cumle = in.nextLine();
 
-        showWords(sentence);
+        showWords(cumle);
 }
 
-    public static void showWords(String sentence) {
-        int space = sentence.indexOf(" ");
-        sentence = sentence.substring(0,space) + "\n" + sentence.substring(space+1);
-        System.out.println(sentence);
+    public static void showWords(String cumle) {
+        int space = cumle.indexOf(" ");
+        cumle = cumle.substring(0,space) + "\n" + cumle.substring(space+1);
+        System.out.println(cumle);
     }
 
 }
