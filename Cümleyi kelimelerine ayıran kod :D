@@ -8,7 +8,7 @@ public class test {
 	public static void main(String[] args) {
         in = new Scanner(System.in);
 
-        System.out.println("Enter the sentence");
+        System.out.println("Cümleyi girin:");
         String sentence = in.nextLine();
 
         showWords(sentence);
