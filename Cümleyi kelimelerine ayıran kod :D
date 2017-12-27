@@ -1,0 +1,23 @@
+package MUSTAFA;
+import java.util.Scanner;
+
+
+public class test {
+    private static Scanner in;
+
+	public static void main(String[] args) {
+        in = new Scanner(System.in);
+
+        System.out.println("Enter the sentence");
+        String sentence = in.nextLine();
+
+        showWords(sentence);
+}
+
+    public static void showWords(String sentence) {
+        int space = sentence.indexOf(" ");
+        sentence = sentence.substring(0,space) + "\n" + sentence.substring(space+1);
+        System.out.println(sentence);
+    }
+
+}
