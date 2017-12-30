@@ -1,0 +1,33 @@
+package MorRobot;
+import java.util.Scanner;
+public class ödev4 {
+
+	private static Scanner morrobot;
+
+	public static void main(String[] args) {
+		morrobot = new Scanner (System.in);
+		
+	
+     System.out.print("Uc Basamakli Bir Tam Sayi Giriniz: ");
+     int sayi = morrobot.nextInt();
+
+     
+     int yuzler,onlar,birler;
+     
+    
+
+
+     yuzler = sayi/100;
+
+     sayi = sayi%100;
+
+     onlar =sayi/10;
+
+     birler  = sayi %10;
+
+    
+    		 
+System.out.println("Rakamlar çarpımı = "+ (yuzler*onlar*birler));
+System.out.println("Rakamlar çarpımının rakamlar toplamına bölümünden kalan = "+ (yuzler*onlar*birler)%(yuzler+onlar+birler));
+}
+}
