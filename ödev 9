@@ -1,0 +1,24 @@
+package MorRobot;
+import java.util.Scanner;
+public class ödev9 {
+
+	public static void main(String[] args) {
+		Scanner morrobot = new Scanner(System.in);
+		
+		int a;
+		
+		System.out.println("Bir sayı giriniz: ");
+		a = morrobot.nextInt();
+		
+		if(a%2==0)
+		{
+			System.out.println("Girdiğiniz sayı çifttir.");
+		}
+		else
+		{
+			System.out.println("Girdiğiniz sayı tektir.");
+		}
+		
+	}
+
+}
