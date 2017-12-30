@@ -1,0 +1,27 @@
+package MorRobot;
+import java.util.Scanner;
+public class ödev5 {
+
+	private static Scanner morrobot;
+
+	public static void main(String[] args) {
+		morrobot = new Scanner(System.in);
+		
+		int sayi;
+		String kelime;
+		
+		System.out.println("Bir kelime giriniz: ");
+		kelime=morrobot.nextLine();
+		
+		
+		System.out.println("Kelimenin ekrana yazdırılmasını istediğiniz miktarı giriniz: ");
+		sayi=morrobot.nextInt();
+		
+		
+		for(int i=0;i<sayi;i++)
+		{
+			System.out.println(kelime);
+		}
+	}
+
+}
