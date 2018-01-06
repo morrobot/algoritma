@@ -1,0 +1,19 @@
+package MorRobot;
+import javax.swing.JOptionPane;
+public class ÖDEV28 {
+    public static void main(String[] args) {
+    String Mor;
+    Mor=JOptionPane.showInputDialog("Birinci Kelime");
+     int i;
+     int StringUzunlugu=Mor.length(); 
+     String robot="";
+   for(i=StringUzunlugu-1;i>=0;i--) 
+	   robot=robot+Mor.charAt(i);
+     if(robot.equals(Mor))
+        
+        System.out.println(Mor+ " Palindromdur");
+        else
+       System.out.println(Mor+ "Palindrom değildir.");
+ 
+    }
+}
