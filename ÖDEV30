@@ -1,0 +1,17 @@
+package MorRobot;
+import java.util.Scanner;
+public class ödev30 {
+
+	public static void main(String[] args) {
+		   { String Mor ; int karakter; 
+		   Scanner Robot =new Scanner (System.in);
+		   System.out.println("cumle yaz");
+		   Mor =Robot.nextLine();
+		   karakter =Mor.length();
+		   System.out.println("karakter sayısı : "+karakter);
+		   }
+		    
+	
+	}
+
+}
