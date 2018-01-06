@@ -1,0 +1,47 @@
+package MorRobot;
+import javax.swing.*;
+
+
+public class ödev29 {
+ 
+     public static void main(String[] args)
+    {
+      int boyut=Integer.parseInt(JOptionPane.showInputDialog("Girilecek Elemanın Sayısını Belirleyiniz"));
+      int dizi[]=new int[boyut];
+      for(int i=0;i<boyut;i++)
+      dizi[i]=Integer.parseInt(JOptionPane.showInputDialog((i+1)+".Elemanı Giriniz"));
+     
+      for(int i=0;i<boyut;i++)
+      {
+          for(int j=i+1;j<boyut;j++)
+          {
+              if(dizi[i]>dizi[j])
+              {
+                  int temp=dizi[j];
+                  dizi[j]=dizi[i];
+                  dizi[i]=temp;
+              }
+          }   
+      }
+      String yazdir="";
+      for(int i=0;i<boyut;i++)
+      yazdir+=dizi[i]+" ";
+      JOptionPane.showMessageDialog(null,yazdir,"Sıralanmış Dizi",JOptionPane.PLAIN_MESSAGE);
+    
+     if(dizi[0]!=dizi[1]&&dizi[1]!=dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"<"+dizi[2]);
+		}
+		else if(dizi[0]==dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"="+dizi[2]);
+		}
+		else if(dizi[0]!=dizi[1]&&dizi[1]==dizi[2])
+		{
+			System.out.println(dizi[0]+"<"+dizi[1]+"="+dizi[2]);
+		}
+		else 
+		{
+			System.out.println(dizi[0]+"="+dizi[1]+"<"+dizi[2]);
+}
+}}
