@@ -1,0 +1,33 @@
+package MorRobot;
+
+import java.util.Random;
+
+public class ÖDEV27 {
+
+	public static void main(String[] args) {
+		int rastgele=0;
+		int cift = 0,tek=0;
+		while(rastgele!=151)
+		{
+		Random r=new Random();
+		rastgele=r.nextInt(200)+150;
+		if(rastgele%2==0)
+		{
+		System.out.print(rastgele+"-");
+		cift++;
+		
+		}
+		
+		if(rastgele%2==1)
+		{
+			System.out.print(rastgele+"-");
+			tek++;
+		}
+		
+		}
+		
+		System.out.println("\n"+"ÇİFT:"+cift);
+		System.out.println("TEK:"+tek);
+	}
+
+}
