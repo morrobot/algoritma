@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class ÖDEV28 {
     public static void main(String[] args) {
     String Mor;
-    Mor=JOptionPane.showInputDialog("Birinci Kelime");
+    Mor=JOptionPane.showInputDialog("kelime veya sayıyı girin");
      int i;
      int StringUzunlugu=Mor.length(); 
      String robot="";
